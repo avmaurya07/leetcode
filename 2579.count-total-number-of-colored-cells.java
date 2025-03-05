@@ -6,12 +6,9 @@
 
 // @lc code=start
 class Solution {
-    public long coloredCells(long n) {
+    public long coloredCells(int n) {
 
-        if (n<2) {
-            return n;
-        }
-        return ((((n-1))*(8+((n-2)*4)))/2+1);
+        return 1+(long)(n-1)*2*n;
     }
 }
 // @lc code=end
